@@ -79,6 +79,24 @@ cron:
       weekday: ''
       month: ''
       monthday: ''
+    php7_beta_deb:
+      name: 'Download PHP7 Beta for Debian'
+      user: www-user
+      command: 'wget -q http://repos.zend.com/zend-server/early-access/php7/php-7.0-latest-DEB-x86_64.tar.gz -O /var/www/repo.puphpet.com/public_html/php7/php-7.0-latest-DEB-x86_64.tar.gz'
+      minute: ''
+      hour: ''
+      weekday: '*/1'
+      month: ''
+      monthday: ''
+    php7_beta_rhel:
+      name: 'Download PHP7 Beta for RHEL'
+      user: www-user
+      command: 'wget -q http://repos.zend.com/zend-server/early-access/php7/php-7.0-latest-RHEL-x86_64.tar.gz -O /var/www/repo.puphpet.com/public_html/php7/php-7.0-latest-RHEL-x86_64.tar.gz'
+      minute: ''
+      hour: ''
+      weekday: '*/1'
+      month: ''
+      monthday: ''
 nginx:
   install: '1'
   settings:
