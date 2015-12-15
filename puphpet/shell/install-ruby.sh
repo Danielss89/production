@@ -22,7 +22,8 @@ elif [[ "${OS}" == 'centos' ]]; then
     gpg2 --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D39DC0E3
 fi
 
-curl -sSL https://get.rvm.io | bash -s stable --quiet-curl --ruby=ruby-1.9.3-p551
+curl -sSL https://raw.githubusercontent.com/wayneeseguin/rvm/master/binscripts/rvm-installer | bash -s stable --quiet-curl --ruby=ruby-1.9.3-p551
+
 
 source /usr/local/rvm/scripts/rvm
 
